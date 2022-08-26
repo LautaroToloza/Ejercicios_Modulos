@@ -1,0 +1,55 @@
+Ejercicios de práctica unidad 1 - Módulos:
+
+1. Cree un programa que genere un numero aleatorio entre 1 y 100 (no se debe mostrar el numero en pantalla). 
+El usuario debe tratar de adivinar el numero ingresado. Cada vez que se ingrese un numero se debe mostrar un mensaje 
+“Gano” si es igual al generado o “El numero aleatorio es mayor” o “El numero aleatorio es menor”. Mostrar cuantos intentos necesito el usuario para ganar.
+
+2. Cree un programa con las siguientes funciones:
+a. Una función que genere una lista con 5 elementos enteros aleatorios que sean números entre 1 y 3
+b. Una función que controle si el primer elemento de la lista es un 1, en caso de que haya un 2 o 3 mezclar la lista y volver a controlar hasta que haya un 1.
+c. Muestre la lista
+
+3. Calcular el factorial de un numero ingresado por teclado. Utilizar la función del módulo math. 
+Debe utilizar SOLO esa función. La función factorial necesita como parámetro un numero entero.
+
+4. Cree un modulo que implemente dos funciones, una que retorne el mayor de tres números enteros y otra que retorne el menor de los tres. 
+El módulo principal es el encargado de importar al modulo anteriormente mencionado, 
+de permitir la carga de los tres números enteros que se deben pasar como parámetros a las funciones y de mostrar los resultados de las mismas.
+
+5. Desarrolle un programa que trabaje con módulos. 
+El módulo que debe crear debe tener una función que tome dos valores numéricos (uno inicial y otro final). 
+El programa debe leer una n cantidad de números que indique el usuario y debe controlar que dicho número se encuentre entre los valores de inicial
+ y final ingresados anteriormente. 
+La función retornará el valor cargado solo si este se encuentra entre los valores inicial o final, de lo contrario devuelve un False. 
+El programa debe cargar el valor devuelto por la función a una lista de números solo si dicho valor es un valor entero 
+(para saber qué tipo de valor es, se puede utilizar la función isinstance(), la cual necesita dos parámetros, 
+el primero es el valor a controlar y el segundo es el tipo de dato que deseamos controlar, 
+por ejemplo: isinstance(2, int) => True/ isinstance(“Hola”, float) => False /
+isinstance(4, bool) => False / isinstance(True, bool) => True). Al final de la carga, se deben mostrar todos los números cargados en la lista.
+
+6. Cree un programa que pregunta cuando usuarios se quieren cargar en una lista. 
+Se tiene que utilizar un módulo para la validación de nombres y contraseñas de usuarios. 
+Las funciones que debería cumplir el módulo son las siguientes:
+
+a. El nombre del usuario debe tener un mínimo de 6 caracteres y un máximo de 12. 
+Si el nombre ingresado tiene menos de 6 caracteres o más de 12, el programa debería avisar de la situación y obligar a que el usuario ingrese un nombre válido.
+
+b. Los usuarios solo pueden contar con valores alfanuméricos, por lo que, si el nombre ingresado por el usuario, 
+si no cumple con dicha condición se debería avisar del error y pedirle al usuario que ingrese un nuevo nombre (puede utilizar la función isalnum(), 
+la cual devuelve un True si el String cuenta solo con valores alfanuméricos o un False en caso contrario). 
+El programa debe obligar a que el usuario ingrese un nombre válido.
+
+c. Si el nombre cumple con las condiciones anteriores, una función debería enviar un True que le avise al resto del programa que el nombre es apto para cargar.
+
+d. Con respecto a la contraseña, debe tener un mínimo de 8 caracteres, 
+si la cantidad es menor el programa debe avisar del error y obligar al usuario a ingresar una contraseña válida.
+
+e. La contraseña debe tener si o si: letras mayúsculas, minúsculas, números, al menos un carácter no alfanumérico y no debe tener espacios en blanco. 
+Como recomendación, puede utilizar las funciones islower() (la función devuelve un True solo si las letras que se encuentran en la cadena son todas minúsculas), 
+issupper() (devuelve un True si la cadena que tiene que controlar todas las letras que contenga están en mayúsculas).
+
+f. Si la contraseña cumple con las condiciones anteriores, se debería enviar un True avisando que la contraseña está en condición de cargar.
+
+g. Solo si la contraseña y el nombre de usuario están en condiciones de cargar, se debería cargar los datos a la lista general. 
+La forma de cargar es la siguiente: cree una lista que guarde el nombre y la contraseña y guarde dicha lista en la lista general. 
+Una vez cargados los nombres, muestre en forma de lista los datos cargados en la lista general.
